@@ -8,18 +8,18 @@ class Solution {
         for (String runner : participant) {
             if (runners.keySet().contains(runner)) {
                 runners.put(runner, runners.get(runner) + 1);
-                continue;
+            } else {
+                runners.put(runner, 0);   
             }
-            runners.put(runner, 0);
         }
         
         for (String completedRunner : completion) {
             if (runners.keySet().contains(completedRunner)) {
                 if (runners.get(completedRunner) == 0) {
                     runners.remove(completedRunner);
-                    continue;
+                } else {
+                    runners.put(completedRunner, runners.get(completedRunner) - 1);
                 }
-                runners.put(completedRunner, runners.get(completedRunner) - 1);
             }
         }
         
