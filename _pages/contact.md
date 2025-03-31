@@ -1,9 +1,11 @@
 ---
 title: Contact
-author: Tao He
-date: 2022-02-05
+author: socra167
+date: 2025-03-31
 category: Jekyll
 layout: post
 ---
 
-This is an contact page.
+- **mail:** socra167@gmail.com
+- **github:** https://github.com/socra167
+- **blog:** https://velog.io/@socra
