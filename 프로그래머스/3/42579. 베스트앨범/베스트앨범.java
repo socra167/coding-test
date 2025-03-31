@@ -31,7 +31,6 @@ class Solution {
             entryList = new ArrayList<>(genreCount.entrySet());
             entryList.sort((entry1, entry2) -> Long.compare(entry2.getValue(), entry1.getValue()));
         }
-
         
         // 장르별로 순회하며 2개씩 앨범에 추가
         for (Map.Entry<String, Long> entry : entryList) {
