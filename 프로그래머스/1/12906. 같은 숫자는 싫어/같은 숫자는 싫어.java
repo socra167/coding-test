@@ -2,13 +2,12 @@ import java.util.*;
 
 public class Solution {
     public int[] solution(int []arr) {
-        List<Integer> result = new ArrayList<>();
-        int last = -1;
+        LinkedList<Integer> result = new LinkedList<>();
+        result.add(arr[0]);
         
-        for (int i = 0; i < arr.length; i++) {
-            if (last != arr[i]) {
-                last = arr[i];
-                result.add(last);
+        for (int i = 1; i < arr.length; i++) {
+            if (result.getLast() != arr[i]) {
+                result.add(arr[i]);
             }
         }
         
