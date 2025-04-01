@@ -23,6 +23,10 @@ HashMap의 value들만 얻고 싶을 때 `HashMap.values()`를 사용하면 valu
 
 이후 `new ArrayList<>`의 인자로 넣어 리스트로 변환했다.
 
+### `HashMap.getOrDefault()` 를 증가에도 활용
+
+Map의 value를 갱신하고 싶을 때, 새 데이터를 추가하는 것과 마찬가지로 `put()`을 사용하면 되므로 value를 넣는 부분에 `getOrDefault()`를 사용하면 검사 로직을 줄일 수 있다.
+
 ### 조합 구하기
 
 조합을 계산할 때 특정 종류를 사용한 경우도 있고, 사용하지 않는 경우도 있어서 고민했다.
