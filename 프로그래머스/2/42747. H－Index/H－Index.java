@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.stream.*;
 
 class Solution {
     public int solution(int[] citations) {
@@ -9,15 +8,14 @@ class Solution {
             .mapToInt(i -> i)
             .toArray();
         
+        int max = 0;
         for (int i = 0; i < sortedCitations.length; i++) {
-            if (sortedCitations[i] < i) {
-                return i;
-            }
-            if (sortedCitations[i] < (i + 2)) {
-                return sortedCitations[i];
+            int currentMax = Math.min(i + 1, sortedCitations[i]);
+            if (max < currentMax) {
+                max = currentMax;
             }
         }
-        return sortedCitations.length < sortedCitations[sortedCitations.length - 1] ?
-                    sortedCitations.length : 0;
+        
+        return max;
     }
 }
