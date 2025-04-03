@@ -1,5 +1,5 @@
 ---
-title: 코딩테스트 Java 메서드
+title: Java Method
 author: socra167
 date: 2025-03-31
 category: coding-test
